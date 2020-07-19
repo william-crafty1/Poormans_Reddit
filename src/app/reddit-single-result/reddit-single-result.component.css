@@ -1,0 +1,20 @@
+.post{
+    background-color: whitesmoke;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+    display: flex;
+}
+
+button {
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: whitesmoke;
+    color: black;
+    border-style: none;
+}

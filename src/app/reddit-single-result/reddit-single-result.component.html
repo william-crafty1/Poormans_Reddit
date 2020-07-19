@@ -1,0 +1,8 @@
+<div class="post">
+    <h2>{{result?.title}}</h2>
+    <img src="{{result?.thumbnail}}" alt="{{result?.thumbnail}}">
+    <br>
+    <a href="{{result?.permalink}}">{{result?.permalink}}</a>
+    <p>{{count}} <button (click)="downVote()"><i class="far fa-thumbs-down"></i></button>
+        <button (click)="upVote()"><i class="far fa-thumbs-up"></i></button></p>
+</div>
