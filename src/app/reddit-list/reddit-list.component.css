@@ -6,6 +6,7 @@
 
 h1 {
     margin-left: 20px;
+    color: whitesmoke;
 }
 
 button {
@@ -16,4 +17,13 @@ button {
     color: black;
     background-color: white;
     border-style: none;
+    border-radius: 30px;
+}
+
+.fab {
+    color: black;
+}
+
+.posts {
+    background-color: black;
 }
