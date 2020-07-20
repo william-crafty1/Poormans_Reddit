@@ -11,11 +11,19 @@ import { Children } from '../models/children';
 export class RedditListComponent implements OnInit {
   data: Main;
   children: Children[];
+  inputValue: string;
 
   constructor(private redditService: RedditService) { }
 
   ngOnInit(): void {
-    this.redditService.getRedditInfo().subscribe((response: Main) => {
+    this.inputValue = 'aww';
+    this.redditService.getRedditInfo(this.inputValue).subscribe((response: Main) => {
+      this.children = response.data.children;
+    });
+  }
+
+  getRedditList() {
+    this.redditService.getRedditInfo(this.inputValue).subscribe((response: Main) => {
       this.children = response.data.children;
       console.log(this.children);
     });

@@ -9,7 +9,7 @@ export class RedditService {
 
   constructor(private http: HttpClient) { }
 
-  getRedditInfo(): Observable<any> {
+  getRedditInfo(link: string): Observable<any> {
     return this.http.get('https://www.reddit.com/r/aww/.json');
   }
 }

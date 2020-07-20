@@ -1,7 +1,9 @@
 <div class="posts">
     <div class="header">
         <h1>Reddit Posts</h1>
-        <button><a href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a></button>
+        <button class="reddit"><a href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a></button>
     </div>
-    <app-reddit-single-result *ngFor="let child of children" [result]="child.data"></app-reddit-single-result>   
+    <app-reddit-single-result *ngFor="let child of children" [result]="child.data"></app-reddit-single-result>
+    <input type="text" placeholder="enter text here" [(ngModel)]="inputValue">
+    <button class="submit" (click)="getRedditList()">Submit</button>
 </div>
